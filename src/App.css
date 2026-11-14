@@ -1,0 +1,26 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.placeholder-page {
+  min-height: 70vh;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.placeholder-page p {
+  color: #a9b6cd;
+}

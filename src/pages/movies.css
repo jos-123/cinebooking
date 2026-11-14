@@ -1,0 +1,129 @@
+
+.movies-page {
+  min-height: 100vh;
+  padding-bottom: 70px;
+  background: #080b18;
+  color: #f8fafc;
+}
+
+.movies-header {
+  padding: 75px 7% 55px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #40308055, transparent 65%),
+    linear-gradient(180deg, #11172b, #080b18);
+}
+
+.movies-eyebrow {
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.movies-header h1 {
+  margin: 17px 0;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.movies-header p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.movies-search {
+  width: min(100%, 550px);
+  height: 52px;
+  margin: 30px auto 0;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #293449;
+  border-radius: 10px;
+  background: #151f32;
+}
+
+.movies-search span {
+  color: #a78bfa;
+  font-size: 26px;
+}
+
+.movies-search input {
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.movies-search input::placeholder {
+  color: #64748b;
+}
+
+.movies-content {
+  width: 86%;
+  max-width: 1500px;
+  margin: 45px auto;
+}
+
+.movies-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.movies-toolbar h2 {
+  font-size: 25px;
+}
+
+.movies-toolbar p {
+  color: #94a3b8;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+.genre-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.genre-filters button {
+  padding: 9px 15px;
+  border: 1px solid #293449;
+  border-radius: 20px;
+  color: #94a3b8;
+  background: #11172b;
+  cursor: pointer;
+}
+
+.genre-filters button:hover,
+.genre-filters .genre-active {
+  color: white;
+  background: #6d42ce;
+  border-color: #8b5cf6;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (max-width: 1050px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
